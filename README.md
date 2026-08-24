@@ -235,3 +235,4 @@ See the `LICENSE.md` and `CITATION.cff` files inside each skill for the controll
 ## Scope
 
 These tools support research navigation, mathematical development, and critical auditing. They do not turn analogy into theorem, numerical failure into impossibility, population obstruction into finite-sample detection, or citation into commercial permission. Exact claims should always be checked against their stated assumptions, proofs, evidence contracts, and historical sources.
+
