@@ -2,7 +2,7 @@
 
 > Cross-disciplinary research tools for applying **Elimination Geometry (EG)** across mathematics, statistics, artificial intelligence, information and computational sciences, optimization, control and decision sciences, quantum and physical sciences, engineering, economics, and life, health and Earth systems.
 >
-> **Equip your AI with EG — and turn it from an answer engine into a discovery engine.**
+> **Equip your AI with EG. Turn it from an Answer Engine into a Discovery Engine.**
 
 [Elimination Geometry — arXiv:2608.17646](https://arxiv.org/abs/2608.17646)
 
