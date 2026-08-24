@@ -41,6 +41,22 @@ EG organizes this problem into three levels:
 
 It also keeps four sources of failure separate: local-model approximation, architecture obstruction, finite-sample generalization, and implementation or optimization error. Moving from a mathematical obstruction to a scientific or engineering intervention requires additional transmission, task-exposure, saturation, and validation arguments.
 
+## Featured success case: an EG-guided information-theory discovery
+
+### Marton's inner bound is strictly sub-optimal
+
+**Mian Huang, Yanxiao Liu, and Yi Liu**,  
+*Sub-optimality of Marton's Inner Bound for the Two-Receiver Broadcast Channel*  
+[[arXiv abstract](https://arxiv.org/abs/2608.19869)] [[PDF](https://arxiv.org/pdf/2608.19869)]
+
+Marton's inner bound, introduced in 1979, has remained the best-known achievable region for the general two-receiver discrete memoryless broadcast channel. Whether it always equals the capacity region was a longstanding open problem. This work proves that it does not: there exist broadcast channels whose capacity region is strictly larger than Marton's inner bound.
+
+The paper records a concrete use of Elimination Geometry in the discovery process. As one strand of the collaborative search, the first author used an **AI-guided, iterative, and structure-driven method based on EG**, allowing the failure of one structural conjecture to identify the next target. The resulting chain passed through counterexamples to the Markovity/rectangular-mapping conjecture, local tensorization and additivity, and then to fixed-input and unconstrained versions of Marton's optimality conjecture.
+
+The final result does not rest on numerical search alone. The paper turns the discovered structure into a rigorous argument using finite auxiliary-variable reductions, a gradient-shaping construction, a constraint-removal theorem, exact rational data, and outward-rounded interval arithmetic.
+
+> **Why this matters for EG.** This is a completed example of EG functioning within a collaborative discovery process as a research method rather than merely a vocabulary: elimination exposed a structural sequence of increasingly consequential failure modes, AI helped search the resulting restricted spaces, and conventional mathematical proof converted the discovered witness into a theorem resolving a major information-theory question.
+
 ## A cross-disciplinary research map
 
 The same local-to-global structure appears under different names across science and engineering. The map below is deliberately broad, but it must be read with an important distinction:
@@ -193,6 +209,15 @@ Mian Huang and Xueqin Wang. “Elimination Geometry.” *arXiv:2608.17646* [cs.L
   url           = {https://arxiv.org/abs/2608.17646}
 }
 ```
+
+## Contact
+
+For research collaboration, technical questions, corrections, and commercial licensing inquiries, contact:
+
+> **Elimination Geometry Project**  
+> [eliminationgeometry@gmail.com](mailto:eliminationgeometry@gmail.com)
+
+This project address is the official public contact for the repository. Commercial authorization requires a separate written agreement from the applicable rights holders; an email inquiry does not itself grant permission.
 
 ## License and use
 
