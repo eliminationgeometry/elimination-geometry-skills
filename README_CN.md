@@ -2,9 +2,9 @@
 
 [English](README.md) | **简体中文**
 
-> **消元几何（Elimination Geometry, EG）** 面向数学与优化、信息与计算科学、人工智能与统计学、控制与决策科学、工程学、量子与物理科学、经济学，以及生命、健康与地球系统的跨学科 研究与工程工具。
+> **消元几何（Elimination Geometry, EG）** 面向数学与优化、信息与计算科学、人工智能与统计学、控制与决策科学、工程学、量子与物理科学、经济学，以及生命、健康与地球系统的跨学科研究与工程工具。
 
-[Elimination Geometry — arXiv:2608.17646](https://arxiv.org/abs/2608.17646)
+**专著预印本：** [Elimination Geometry（消元几何）— arXiv:2608.17646](https://arxiv.org/abs/2608.17646)
 
 ## 什么是消元几何？
 
