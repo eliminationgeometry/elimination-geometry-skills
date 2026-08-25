@@ -101,9 +101,9 @@ EG first derives an exact native defect from the original problem: the excess co
 The ledgers also preserve operation order. Eliminating pointwise and then imposing sharing is generally a different problem from imposing a shared constraint before elimination:
 
 $$
-\operatorname{Eliminate}\circ\operatorname{Couple}
+\mathrm{Eliminate}\circ\mathrm{Couple}
 \neq
-\operatorname{Couple}\circ\operatorname{Eliminate}.
+\mathrm{Couple}\circ\mathrm{Eliminate}.
 $$
 
 Compression can likewise merge distinctions needed for deployment, certification, or future updates. EG's **no-compensation principle** does not say that resources can never be exchanged. It says that, without an explicit exchange theorem, quantities from different ledgers may not be added, substituted, or used to cancel one another. More data do not automatically remove an architecture obstruction; a larger deployment model cannot reconstruct likelihood directions erased by the evidence interface; and better optimization cannot create distinctions absent from the representation. Typed accounting therefore prevents category errors, false causal diagnoses, and irrelevant interventions.
