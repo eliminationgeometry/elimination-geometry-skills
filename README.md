@@ -4,9 +4,7 @@
 
 > Cross-disciplinary research and engineering tools for applying **Elimination Geometry (EG)** across mathematics and optimization, information and computational sciences, artificial intelligence and statistics, control and decision sciences, engineering, quantum and physical sciences, economics, and life, health, and Earth systems.
 
-> Equip your AI with EG. Turn it from an Answer Engine into a **Discovery Engine**.
-
-[Elimination Geometry — arXiv:2608.17646](https://arxiv.org/abs/2608.17646)
+**Book preprint:** [Elimination Geometry — arXiv:2608.17646](https://arxiv.org/abs/2608.17646)
 
 ## What is Elimination Geometry?
 
@@ -110,7 +108,7 @@ Compression can likewise merge distinctions needed for deployment, certification
 
 ### 2. Certification and action: know when to conclude and what to do next
 
-Statistical EG, Architecture, and EGML II close structural analysis into a certification–action system. A confidence world retains every complete world compatible with the available data. The system reports “certified feasible” or “certified impossible” only when those worlds agree; otherwise it honestly reports “unresolved.” Even if every compatible world admits some feasible architecture of its own, there may still be no single architecture that is safe to deploy across all of them now.
+EG does more than analyze structural obstructions. It connects finite-data decisions, system-capacity limits, and the choice of the next intervention into a certification–action system. A confidence world retains every complete world compatible with the available data. The system reports “certified feasible” or “certified impossible” only when those worlds agree; otherwise it honestly reports “unresolved.” Even if every compatible world admits some feasible architecture of its own, there may still be no single architecture that is safe to deploy across all of them now.
 
 EG also distinguishes three carriers that are not interchangeable by default. A deployment carrier preserves the oracle distinctions needed to act; an evidence carrier preserves the statistical distinctions needed to authorize a conclusion; and a recursive carrier preserves the state distinctions needed to choose future observations and continue updating. A failure witness therefore routes to a matching action: change the scientific model for local-model failure; change the sensor, statistic, or experiment for evidence blindness; split state or add memory for a recursive collision; change representation, routing, atlases, or decoders for a deployment collision; and spend more optimization or compute only when an admitted solution has merely not been reached.
 
