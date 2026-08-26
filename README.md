@@ -247,8 +247,6 @@ The labels apply only to the mechanisms named below, not to every problem in the
 
 ### Mixed computational and cyber-physical engineering
 
-These fields pass the fit test at the boundary between a physical model and an executable representation, state, protocol, controller, or deployed system. They are not a separate fifth skill family.
-
 - **Simulation software and computational engineering — partly anchored transfer:** governing-model state and numerical detail are reduced into executable discretizations, solvers, precision choices, and parallel representations and judged jointly by physical quantity-of-interest error, convergence, wall-clock cost, and reproducibility. Exactification and certified deflation are anchors; end-to-end model–code accounting remains to be developed.
 - **Robotics and autonomous systems — partly anchored transfer:** physical and perceptual history is reduced into one embodied state, map, planner abstraction, estimator, or policy under sensing and compute limits and judged by closed-loop task success, safety, and recovery. Control and recursive-state interfaces are anchored; complete robotic certification is not.
 - **Digital twins and model-based operations — supported transfer direction:** evolving physical state is reduced into one synchronized model, schema, estimator, and fidelity policy and judged by monitoring, prediction, intervention, or maintenance decisions. Staleness, model mismatch, versioning, and synchronization create concrete collision witnesses.
