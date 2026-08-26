@@ -2,7 +2,7 @@
 
 **English** | [Chinese](README_CN.md)
 
-> Cross-disciplinary research and engineering tools for applying **Elimination Geometry (EG)** across mathematics and optimization, information and computational sciences, artificial intelligence and statistics, control and decision sciences, engineering, quantum and physical sciences, economics, and life, health, and Earth systems.
+> A cross-disciplinary Discovery Engine and engineering toolkit for applying **Elimination Geometry (EG)** across mathematics and optimization, information and computational sciences, artificial intelligence and statistics, control and decision sciences, engineering, quantum and physical sciences, economics, and life, health, and Earth systems.
 
 **Book preprint:** [Elimination Geometry — arXiv:2608.17646](https://arxiv.org/abs/2608.17646)
 
@@ -106,7 +106,13 @@ $$
 
 Compression can likewise merge distinctions needed for deployment, certification, or future updates. EG's **no-compensation principle** does not say that resources can never be exchanged. It says that, without an explicit exchange theorem, quantities from different ledgers may not be added, substituted, or used to cancel one another. More data do not automatically remove an architecture obstruction; a larger deployment model cannot reconstruct likelihood directions erased by the evidence interface; and better optimization cannot create distinctions absent from the representation. Typed accounting therefore prevents category errors, false causal diagnoses, and irrelevant interventions.
 
-### 2. Certification and action: know when to conclude and what to do next
+### 2. A heuristic engine: turn open problems into structured search
+
+EG supplies reusable research heuristics: seek the smallest noncommuting elimination–coupling square; change quantifier order and test the gap between pointwise and common existence; find the smallest pair of oracles merged by a shared carrier; derive the defect from the original objective rather than choosing an arbitrary distance; check whether an internal defect reaches and is exposed by the declared task; search boundaries, singularities, topology, dependence, products, and tensorization for counterexamples; and let a failed conjecture identify a sharper, testable successor.
+
+These heuristics do not guarantee novelty or replace proof. They narrow the search space, rule out interventions unrelated to the diagnosed obstruction, and organize exploration into a cycle of structural conjecture, minimal witness, transmission test, certificate, and repair. The counterexample cascade in the Marton case below is one representative instance of this discovery mechanism.
+
+### 3. Certification and action: know when to conclude and what to do next
 
 EG does more than analyze structural obstructions. It connects finite-data decisions, system-capacity limits, and the choice of the next intervention into a certification–action system. A confidence world retains every complete world compatible with the available data. The system reports “certified feasible” or “certified impossible” only when those worlds agree; otherwise it honestly reports “unresolved.” Even if every compatible world admits some feasible architecture of its own, there may still be no single architecture that is safe to deploy across all of them now.
 
@@ -132,11 +138,7 @@ $$
 
 EG therefore asks not only “Why did this fail?” but also “What is currently known?”, “Which kind of evidence or capacity is still missing?”, and “What is the most informative next action?”
 
-### 3. A heuristic engine: turn open problems into structured search
-
-EG supplies reusable research heuristics: seek the smallest noncommuting elimination–coupling square; change quantifier order and test the gap between pointwise and common existence; find the smallest pair of oracles merged by a shared carrier; derive the defect from the original objective rather than choosing an arbitrary distance; check whether an internal defect reaches and is exposed by the declared task; search boundaries, singularities, topology, dependence, products, and tensorization for counterexamples; and let a failed conjecture identify a sharper, testable successor.
-
-These heuristics do not guarantee novelty or replace proof. They narrow the search space, rule out interventions unrelated to the diagnosed obstruction, and organize exploration into a cycle of structural conjecture, minimal witness, transmission test, certificate, and repair. The counterexample cascade in the Marton case below is one representative instance of this discovery mechanism.
+The first three mechanisms explain why EG works as a research method. The fourth explains why AI can reuse and amplify that method reliably.
 
 ### 4. An executable research graph: make dispersed knowledge work together
 
