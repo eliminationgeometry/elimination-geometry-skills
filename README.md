@@ -22,7 +22,7 @@ $$
 D_x(a)=H_x(a)-J(x)\ge 0.
 $$
 
-This is not an arbitrary distance chosen after the fact. It is the exact excess cost measured in the native units of the original objective: likelihood, divergence, proper score, energy, regret, Bellman loss, free energy, or another declared criterion.
+This is not an arbitrary distance chosen after the fact. It measures excess cost directly in the original problem's own terms—for example prediction error, decision loss, energy difference, or another declared objective.
 
 The central distinction is
 
@@ -41,7 +41,7 @@ EG organizes this problem into three levels:
 2. **Global realizability:** Can one admissible shared mechanism realize the local oracle field?
 3. **Finite-sample certifiability:** Can available data distinguish realizability, nonrealizability, and an unresolved case with controlled error?
 
-It also keeps four sources of failure separate: local-model approximation, architecture obstruction, finite-sample generalization, and implementation or optimization error. Moving from a mathematical obstruction to a scientific or engineering intervention requires additional transmission, task-exposure, saturation, and validation arguments.
+It also keeps four sources of failure separate: local-model approximation, architecture obstruction, finite-sample generalization, and implementation or optimization error. Moving from a mathematical obstruction to a scientific or engineering intervention also requires showing how the obstruction affects the final task, whether the existing system has exhausted its available capacity, and whether suitable independent evidence supports the conclusion.
 
 ## What is included?
 
@@ -104,11 +104,11 @@ $$
 \mathrm{Couple}\circ\mathrm{Eliminate}.
 $$
 
-Compression can likewise merge distinctions needed for deployment, certification, or future updates. EG's **no-compensation principle** does not say that resources can never be exchanged. It says that, without an explicit exchange theorem, quantities from different ledgers may not be added, substituted, or used to cancel one another. More data do not automatically remove an architecture obstruction; a larger deployment model cannot reconstruct likelihood directions erased by the evidence interface; and better optimization cannot create distinctions absent from the representation. Typed accounting therefore prevents category errors, false causal diagnoses, and irrelevant interventions.
+Compression can likewise merge distinctions needed for deployment, certification, or future updates. EG's **no-compensation principle** does not say that resources can never be exchanged. It says that, without an explicit exchange theorem, quantities from different ledgers may not be added, substituted, or used to cancel one another. More data do not automatically remove an architecture obstruction; a larger deployment model cannot recover crucial information already discarded by the evidence interface; and better optimization cannot create distinctions absent from the representation. Typed accounting therefore prevents category errors, false causal diagnoses, and irrelevant interventions.
 
 ### 2. A heuristic engine: turn open problems into structured search
 
-EG supplies reusable research heuristics: seek the smallest noncommuting elimination–coupling square; change quantifier order and test the gap between pointwise and common existence; find the smallest pair of oracles merged by a shared carrier; derive the defect from the original objective rather than choosing an arbitrary distance; check whether an internal defect reaches and is exposed by the declared task; search boundaries, singularities, topology, dependence, products, and tensorization for counterexamples; and let a failed conjecture identify a sharper, testable successor.
+EG supplies reusable research heuristics. It first finds the smallest problem in which solving cases separately conflicts with requiring one shared solution, and compares “a solution for each case” with “one solution for every case.” It then looks for the smallest pair treated as identical by a shared representation even though they produce different task outcomes; the defect is always derived from the original objective rather than chosen as an arbitrary distance. Next it checks whether these internal differences actually affect the final task and searches edge cases, structural breaks, dependencies, and effects that appear only after repetition or composition for counterexamples. Each failed conjecture is used to generate a sharper, testable successor.
 
 These heuristics do not guarantee novelty or replace proof. They narrow the search space, rule out interventions unrelated to the diagnosed obstruction, and organize exploration into a cycle of structural conjecture, minimal witness, transmission test, certificate, and repair. The counterexample cascade in the Marton case below is one representative instance of this discovery mechanism.
 
@@ -116,7 +116,7 @@ These heuristics do not guarantee novelty or replace proof. They narrow the sear
 
 EG does more than analyze structural obstructions. It connects finite-data decisions, system-capacity limits, and the choice of the next intervention into a certification–action system. A confidence world retains every complete world compatible with the available data. The system reports “certified feasible” or “certified impossible” only when those worlds agree; otherwise it honestly reports “unresolved.” Even if every compatible world admits some feasible architecture of its own, there may still be no single architecture that is safe to deploy across all of them now.
 
-EG also distinguishes three carriers that are not interchangeable by default. A deployment carrier preserves the oracle distinctions needed to act; an evidence carrier preserves the statistical distinctions needed to authorize a conclusion; and a recursive carrier preserves the state distinctions needed to choose future observations and continue updating. A failure witness therefore routes to a matching action: change the scientific model for local-model failure; change the sensor, statistic, or experiment for evidence blindness; split state or add memory for a recursive collision; change representation, routing, atlases, or decoders for a deployment collision; and spend more optimization or compute only when an admitted solution has merely not been reached.
+EG also distinguishes three carriers that are not interchangeable by default. A deployment carrier preserves the oracle distinctions needed to act; an evidence carrier preserves the statistical distinctions needed to authorize a conclusion; and a recursive carrier preserves the state distinctions needed to choose future observations and continue updating. A failure witness therefore routes to a matching action: change the scientific model for local-model failure; change the sensor, statistic, or experiment for evidence blindness; split state or add memory for a recursive collision; change the representation, routing, or decoding method for a deployment collision; and spend more optimization or compute only when an admitted solution has merely not been reached.
 
 The result is an auditable responsibility chain:
 
@@ -142,9 +142,9 @@ The first three mechanisms explain why EG works as a research method. The fourth
 
 ### 4. An executable research graph: make dispersed knowledge work together
 
-A foundation model may separately know about EM, Bregman distances, Schur complements, missing information, rate–distortion, topological obstructions, and confidence sets. Yet these ideas live in different papers, disciplines, and contexts. After pretraining compresses a vast corpus into model parameters, the individual facts may remain while their cross-disciplinary links fail to be retrieved, ordered, and activated together for a new problem. The knowledge has not literally been deleted; the relevant relations may simply be weak links without a stable path of use.
+A foundation model may already have encountered many of the methods and results needed for such problems: how to eliminate auxiliary variables, measure the cost of approximation or compression, recognize structural limits that prevent locally adequate solutions from being deployed together, and preserve uncertainty when the evidence is incomplete. Yet this knowledge is scattered across different literatures, disciplines, and contexts. After pretraining compresses a vast corpus into model parameters, the individual facts may remain while their cross-disciplinary links fail to be retrieved, ordered, and activated together for a new problem. The knowledge has not literally been deleted; the relevant relations may simply be weak links without a stable path of use.
 
-EG organizes these dispersed ideas into a typed, evidence-bearing, action-linked **executable research graph**. It records not only which concepts exist, but which object came from which elimination, which defect uses which native unit, which carrier must preserve which distinction, which gate permits which inference, and which failure witness should trigger which action. EM and Bregman distance, for example, become parts of one reasoning chain through variational elimination, exact insertion defects, conditional projection, and local convergence structure rather than two isolated entries.
+EG organizes these dispersed ideas into a typed, evidence-bearing, action-linked **executable research graph**. It records not only which concepts exist, but which object came from which elimination, which defect uses which native unit, which carrier must preserve which distinction, which gate permits which inference, and which failure witness should trigger which action. A method for eliminating hidden factors and a tool for measuring the cost of deviation, for example, no longer remain concepts isolated in different literatures; their roles in the same problem place them within one complete reasoning chain.
 
 The repository's four EG skills deploy this organization for different tasks: `eg-library` handles primary-source retrieval, verification, and synthesis; `eg-research-collaborator` develops unfamiliar problems into falsifiable research programs; `eg-engineering-analysis` serves physical, scientific, and multidisciplinary engineered systems; and `eg-software-engineering` serves code, software architecture, and runtime systems. Each uses a compact canon to preserve core relations and reasoning order, keeps the complete monograph and papers as traceable external memory, and rereads exact sources on demand for the problem at hand.
 
@@ -160,7 +160,7 @@ What EG gives an AI first is not more facts, but types, adjacency, retrieval ord
 
 Introduced in 1979, Marton's inner bound remained the best-known achievable region for the general two-receiver discrete memoryless broadcast channel. This work proves that it does not always reach the capacity region, resolving a longstanding optimality question.
 
-The paper records EG's concrete role in the collaborative discovery process: AI-assisted structural search progressed from a counterexample to a Markovity conjecture through tensorization and additivity to a counterexample to Marton optimality, after which rigorous mathematics completed the proof. It is a successful example of EG moving from structural diagnosis to an important theoretical discovery.
+The paper records EG's concrete role in the collaborative discovery process: AI-assisted structural search began with a counterexample to a narrower conjecture about channel structure, advanced through a sequence of stronger falsifiable statements, and eventually reached the key counterexample to Marton optimality; rigorous mathematics then completed the proof. It is a successful example of EG moving from structural diagnosis to an important theoretical discovery.
 
 ### (2) The Data Selection problem
 
@@ -168,11 +168,11 @@ The paper records EG's concrete role in the collaborative discovery process: AI-
 *Exact Data Selection: Low Dimensions and Budget Two*  
 [[Paper and DOI](https://doi.org/10.5281/zenodo.21712106)] [[COLT 2025 open problem](https://proceedings.mlr.press/v291/hanneke25e.html)]
 
-When a learning algorithm is fixed and may retain only a small subset of a full dataset, which samples best preserve full-data performance? This work treats the selection budget as a resource coordinate and the excess squared loss of the selected-sample mean relative to the full-data mean as the native defect. It solves the low-dimensional mean-estimation case exactly and identifies the dimension-dependent transition at budget two. EG's role is to view the selected samples as a budget-limited information carrier and price data compression directly in the original squared loss, producing a clear “how much data versus how much performance” frontier.
+When a learning algorithm is fixed and may retain only a small subset of a full dataset, which samples best preserve full-data performance? This work measures the performance loss directly by the additional squared error between the selected-sample mean and the full-data mean. It solves the low-dimensional case exactly and identifies how the transition at budget two changes with dimension. EG's role is to treat the selected samples as a budget-limited representation and price data compression in the original task loss, producing a clear “how much data versus how much performance” frontier.
 
 ### (3) Data analysis in quantum computing: “Correct on average” does not mean “reliable”
 
-In quantum computing and quantum information, a quantum state cannot be read out in full like ordinary data. Researchers must aggregate many randomized measurements to estimate global properties such as quantum entropy. Even if every local estimator is unbiased, this says only that its long-run average is correct; it does not guarantee small fluctuations with finite data. Different aggregation rules can be equally unbiased while retaining very different high-order noise. **Correct local components do not guarantee a correct shared aggregation mechanism.**
+In quantum computing, researchers cannot read the full system state as they would ordinary data; they must combine many randomized measurements to estimate global properties. A method can be correct on average over the long run without being stable with finite data. Different aggregation rules can therefore have the same long-run average but very different fluctuations. **Correct local components do not guarantee a correct shared aggregation mechanism.**
 
 EG audits the **estimation object**, **aggregation architecture**, and **final risk** separately: expose the aggregation bottleneck in a minimal case, prove its actual cost, and then apply a matched repair such as using a more complete set of sample combinations. The same obstruction–witness–repair route applies to batches, subgraphs, expert outputs, and distributed computation, while preventing local correctness from being overstated as a broad global guarantee.
 
@@ -254,7 +254,7 @@ These fields pass the fit test at the boundary between a physical model and an e
 - **Digital twins and model-based operations — supported transfer direction:** evolving physical state is reduced into one synchronized model, schema, estimator, and fidelity policy and judged by monitoring, prediction, intervention, or maintenance decisions. Staleness, model mismatch, versioning, and synchronization create concrete collision witnesses.
 - **Cyber-physical, embedded, and real-time systems — partly anchored transfer:** plant, software, network, and clock state are reduced into shared interfaces, schedules, protocols, and runtime state and judged by end-to-end control, timing, robustness, and safety. Formal timing, concurrency, security, and certification obligations remain external authorities.
 
-For these mixed fields, the two engineering skills share a lightweight cross-boundary contract covering the end-to-end observer and native metric; units, frames, bases, clocks, timestamps, order, and synchronization; physical and software state semantics; typed error budgets; model/data/code/schema/hardware provenance; online information versus oracle privilege; and validation from exact checks through software-in-the-loop, hardware-in-the-loop, and independently frozen endpoints. Passing this contract does not authorize code changes, hardware execution, deployment, experiments, or safety certification.
+For these mixed fields, the two engineering skills share a lightweight cross-boundary contract: declare one goal spanning model and software, record the physical meaning, units, timing, and state at the interface, keep error sources and version provenance separate, and state both the information actually available to the system and the validation path from simulation to an independent endpoint. Passing this contract does not authorize code changes, hardware execution, deployment, experiments, or safety certification.
 
 ### Life, health, Earth, and environmental systems
 
@@ -281,7 +281,7 @@ A defensible new application must identify:
 
 All four skills contain the complete Version 1.9 monograph source snapshot, the **Core16** manuscripts, and the **Extend17** domain extensions. Each is independent and does not call another EG skill. They initialize a compact role-specific memory and reread exact chapters or papers on demand. They do not treat a summary, search hit, analogy, numerical failure, or engineering proxy as a substitute for the underlying source or evidence.
 
-- **Core16** develops the common EG framework: certified elimination, native defects, the P/G/X/V/C design split, integrability and representation gates, composition, transfer, operational semantics, statistical certificates, architecture ledgers, adaptive learning, and exactification-based optimization.
+- **Core16** develops the common EG framework: starting from local elimination and its native cost, it asks whether one shared representation can serve different cases, separates the sources of failure, traces how a defect affects the task, and studies finite-data certification together with repairs in learning and optimization.
 - **Extend17** develops domain-facing research in information theory, strategic learning, time series and dynamical closure, statistical physics and renormalization, queueing, and market microstructure.
 
 The distinction between *core* and *extension* describes logical role, not importance. Historical priority should be assessed at the level of the full problem contract and theorem chain: an inherited component formula must be credited, but a formula match alone does not establish identity of the surrounding framework.
