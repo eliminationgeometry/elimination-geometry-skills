@@ -67,6 +67,15 @@ A research-development companion for turning an unfamiliar domain problem into a
 - experiment contracts and mechanism-matched interventions;
 - manuscript organization and adversarial referee review.
 
+### `eg-software-engineering`
+
+A repository-grounded companion for designing, diagnosing, implementing, optimizing, and verifying software systems. It supports:
+
+- software architecture, integration, APIs, schemas, caches, and state machines;
+- distributed and streaming systems, data and ML infrastructure, numerical software, and deployment;
+- correctness, performance, reliability, compatibility, security boundaries, and resource analysis;
+- executable witnesses, discriminating tests, minimal code or contract changes, and layered verification.
+
 ### `eg-engineering-analysis`
 
 A scientific and physical-engineering companion for analyzing, modeling, designing, optimizing, and verifying engineered systems. It supports:
@@ -77,20 +86,11 @@ A scientific and physical-engineering companion for analyzing, modeling, designi
 - model-form, representation, parameter, numerical, implementation, and experimental error separation;
 - physical witnesses, uncertainty analysis, mechanism-matched interventions, and independent validation.
 
-### `eg-software-engineering`
-
-A repository-grounded companion for designing, diagnosing, implementing, optimizing, and verifying software systems. It supports:
-
-- software architecture, integration, APIs, schemas, caches, and state machines;
-- distributed and streaming systems, data and ML infrastructure, numerical software, and deployment;
-- correctness, performance, reliability, compatibility, security boundaries, and resource analysis;
-- executable witnesses, discriminating tests, minimal code or contract changes, and layered verification.
-
 The two engineering skills are routed by the **dominant artifact and acceptance contract**: physical models, closures, and boundary conditions go to `eg-engineering-analysis`; implementation, concurrency, memory, and performance go to `eg-software-engineering`. Each independently includes the same on-demand cross-boundary protocol, remains self-contained, and does not invoke the other; mixed domains are mapped below.
 
 ## Why does EG work?
 
-EG is effective not because it forces different disciplines into one formula, or because abstract language can replace domain knowledge and rigorous proof. It changes how a research problem is represented, in what order inferences are made, and which actions the evidence permits: identify the eliminated local oracle and its native cost; declare the sharing and deployment contract; preserve the order of noncommuting operations; record different failures in different ledgers; and allow each kind of evidence to authorize only a matching conclusion and intervention.
+EG is effective not because it forces different disciplines into one formula, or because abstract language can replace domain knowledge, rigorous proof, or engineering validation. It changes how research and engineering problems are represented, in what order inferences are made, and which actions the evidence permits: identify the eliminated local oracle and its native cost; declare the sharing and deployment contract; preserve the order of noncommuting operations; record different failures in different ledgers; and allow each kind of evidence to authorize only a matching conclusion, modification, and action. For AI, EG also turns these rules into repeatable problem-solving paths, allowing dispersed knowledge to be retrieved, ordered, verified, and converted into the next research or engineering action for a concrete task, thereby strengthening AI as a research and engineering collaborator.
 
 ### 1. Typed ledgers: prevent one problem from masquerading as another
 
@@ -106,17 +106,19 @@ $$
 
 Compression can likewise merge distinctions needed for deployment, certification, or future updates. EG's **no-compensation principle** does not say that resources can never be exchanged. It says that, without an explicit exchange theorem, quantities from different ledgers may not be added, substituted, or used to cancel one another. More data do not automatically remove an architecture obstruction; a larger deployment model cannot recover crucial information already discarded by the evidence interface; and better optimization cannot create distinctions absent from the representation. Typed accounting therefore prevents category errors, false causal diagnoses, and irrelevant interventions.
 
-### 2. A heuristic engine: turn open problems into structured search
+### 2. A discovery and diagnosis engine: turn open questions and engineering failures into structured search
 
-EG supplies reusable research heuristics. It first finds the smallest problem in which solving cases separately conflicts with requiring one shared solution, and compares “a solution for each case” with “one solution for every case.” It then looks for the smallest pair treated as identical by a shared representation even though they produce different task outcomes; the defect is always derived from the original objective rather than chosen as an arbitrary distance. Next it checks whether these internal differences actually affect the final task and searches edge cases, structural breaks, dependencies, and effects that appear only after repetition or composition for counterexamples. Each failed conjecture is used to generate a sharper, testable successor.
+EG supplies reusable methods for discovery and diagnosis. For research questions, it finds the smallest case in which solving instances separately conflicts with requiring one shared solution, and compares “a solution for each case” with “one solution for every case.” For engineering problems, it seeks the smallest reproducible failure: two locally correct components, states, or operating conditions are treated as identical by a shared model or interface but lead to different final outcomes. Both kinds of work define cost from the original objective or acceptance metric, check whether the internal difference reaches the final task, and use edge cases, repeated runs, composition effects, and targeted tests to distinguish causes.
 
-These heuristics do not guarantee novelty or replace proof. They narrow the search space, rule out interventions unrelated to the diagnosed obstruction, and organize exploration into a cycle of structural conjecture, minimal witness, transmission test, certificate, and repair. The counterexample cascade in the Marton case below is one representative instance of this discovery mechanism.
+These methods do not guarantee novelty or replace proof, testing, or engineering acceptance. They narrow the search space and organize work into a cycle of conjecture or failure reproduction, minimal witness, impact-path check, evidence, and verified repair. A failed conjecture produces a sharper statement; a failed repair produces a more discriminating test. The Marton case shows the research-discovery side, while the engineering implementation pattern below shows how the same logic enters models, software, and system verification.
 
 ### 3. Certification and action: know when to conclude and what to do next
 
 EG does more than analyze structural obstructions. It connects finite-data decisions, system-capacity limits, and the choice of the next intervention into a certification–action system. A confidence world retains every complete world compatible with the available data. The system reports “certified feasible” or “certified impossible” only when those worlds agree; otherwise it honestly reports “unresolved.” Even if every compatible world admits some feasible architecture of its own, there may still be no single architecture that is safe to deploy across all of them now.
 
-EG also distinguishes three carriers that are not interchangeable by default. A deployment carrier preserves the oracle distinctions needed to act; an evidence carrier preserves the statistical distinctions needed to authorize a conclusion; and a recursive carrier preserves the state distinctions needed to choose future observations and continue updating. A failure witness therefore routes to a matching action: change the scientific model for local-model failure; change the sensor, statistic, or experiment for evidence blindness; split state or add memory for a recursive collision; change the representation, routing, or decoding method for a deployment collision; and spend more optimization or compute only when an admitted solution has merely not been reached.
+In engineering work, the same principle retains every failure explanation still compatible with the logs, tests, and operating conditions until discriminating checks separate them. A passing test or a single benchmark does not automatically authorize a broader claim of correctness, performance, physical validity, or safety.
+
+EG also distinguishes three carriers that are not interchangeable by default. A deployment carrier preserves the oracle distinctions needed to act; an evidence carrier preserves the statistical distinctions needed to authorize a conclusion; and a recursive carrier preserves the state distinctions needed to choose future observations and continue updating. A failure witness therefore routes to a matching action: change the scientific model for local-model failure; change code, interfaces, or configuration and run the matching tests for an implementation failure; change the sensor, statistic, or experiment for evidence blindness; split state or add memory for a recursive collision; change the representation, routing, or decoding method for a deployment collision; and spend more optimization or compute only when an admitted solution has merely not been reached.
 
 The result is an auditable responsibility chain:
 
@@ -138,19 +140,17 @@ $$
 
 EG therefore asks not only “Why did this fail?” but also “What is currently known?”, “Which kind of evidence or capacity is still missing?”, and “What is the most informative next action?”
 
-The first three mechanisms explain why EG works as a research method. The fourth explains why AI can reuse and amplify that method reliably.
+### 4. How EG strengthens AI for research and engineering: an executable knowledge-and-action graph
 
-### 4. An executable research graph: make dispersed knowledge work together
+A foundation model may already have encountered many of the methods, results, and implementation practices needed for research and engineering problems. It may know how to eliminate auxiliary variables, measure the cost of approximation or compression, and recognize structural limits that prevent locally adequate solutions from being deployed together; it may also know how to locate an interface failure, compare implementations, and preserve uncertainty when evidence is incomplete. Yet this knowledge is scattered across different literatures, codebases, disciplines, and engineering contexts. After pretraining compresses a vast corpus into model parameters, the individual facts may remain while their cross-domain links fail to be retrieved, ordered, and activated together for a new task. The knowledge has not literally been deleted; the relevant relations may simply be weak links without a stable path of use.
 
-A foundation model may already have encountered many of the methods and results needed for such problems: how to eliminate auxiliary variables, measure the cost of approximation or compression, recognize structural limits that prevent locally adequate solutions from being deployed together, and preserve uncertainty when the evidence is incomplete. Yet this knowledge is scattered across different literatures, disciplines, and contexts. After pretraining compresses a vast corpus into model parameters, the individual facts may remain while their cross-disciplinary links fail to be retrieved, ordered, and activated together for a new problem. The knowledge has not literally been deleted; the relevant relations may simply be weak links without a stable path of use.
+EG organizes this dispersed material into a typed, evidence-bearing, action-linked **executable knowledge-and-action graph**. It records not only which concepts exist, but how an object is produced, how cost is measured, which distinctions a shared mechanism must preserve, which evidence permits which conclusion, and which research or engineering action a failure should trigger. It also places model assumptions, interface state, code changes, test results, and acceptance criteria in one traceable chain so that theoretical conclusions, implementation proxies, and real-system behavior do not masquerade as one another.
 
-EG organizes these dispersed ideas into a typed, evidence-bearing, action-linked **executable research graph**. It records not only which concepts exist, but which object came from which elimination, which defect uses which native unit, which carrier must preserve which distinction, which gate permits which inference, and which failure witness should trigger which action. A method for eliminating hidden factors and a tool for measuring the cost of deviation, for example, no longer remain concepts isolated in different literatures; their roles in the same problem place them within one complete reasoning chain.
+The repository's four EG skills deploy this organization for different tasks: `eg-library` handles primary-source retrieval, verification, and synthesis; `eg-research-collaborator` develops unfamiliar problems into falsifiable research programs; `eg-software-engineering` serves code, software architecture, and runtime systems; and `eg-engineering-analysis` serves physical, scientific, and multidisciplinary engineered systems. Each uses a compact canon to preserve core relations and reasoning order, keeps the complete monograph and papers as traceable external memory, and rereads exact sources on demand for the problem at hand.
 
-The repository's four EG skills deploy this organization for different tasks: `eg-library` handles primary-source retrieval, verification, and synthesis; `eg-research-collaborator` develops unfamiliar problems into falsifiable research programs; `eg-engineering-analysis` serves physical, scientific, and multidisciplinary engineered systems; and `eg-software-engineering` serves code, software architecture, and runtime systems. Each uses a compact canon to preserve core relations and reasoning order, keeps the complete monograph and papers as traceable external memory, and rereads exact sources on demand for the problem at hand.
+What EG gives an AI first is not more facts, but types, adjacency, retrieval order, evidence thresholds, and next actions among the facts it already has. In research, this creates a path from conjecture and witness to proof and certificate; in engineering, it connects objectives, models, interfaces, implementation, tests, and acceptance into a traceable loop. AI can therefore participate more reliably not only in answering, but also in discovery, diagnosis, implementation, and verification.
 
-What EG gives an AI first is not more facts, but types, adjacency, retrieval order, evidence thresholds, and next actions among the facts it already has. It helps dispersed knowledge work together on the right problem and in the right order.
-
-## Representative cases
+## Representative cases and an engineering implementation pattern
 
 ### (1) Marton's inner bound is strictly suboptimal
 
@@ -176,13 +176,17 @@ In quantum computing, researchers cannot read the full system state as they woul
 
 EG audits the **estimation object**, **aggregation architecture**, and **final risk** separately: expose the aggregation bottleneck in a minimal case, prove its actual cost, and then apply a matched repair such as using a more complete set of sample combinations. The same obstruction–witness–repair route applies to batches, subgraphs, expert outputs, and distributed computation, while preventing local correctness from being overstated as a broad global guarantee.
 
+### (4) Engineering implementation pattern: from local passes to end-to-end acceptance
+
+In simulation, robotics, digital twins, and software systems, individual components may pass their own checks while the assembled system still misses the final task. EG does not immediately blame model size, data, or compute. It first freezes the end-to-end objective and acceptance metric, reproduces the smallest failure, identifies which distinction was lost by a shared model, state, or interface, and then separates scientific-model, evidence, numerical-method, and implementation explanations. A repair changes only the mechanism supported by the evidence and is verified at the level required by the claim—through tests, benchmarks, simulation, hardware, or independent data. Engineering implementation is therefore not an afterthought to theory; it enters the same traceable chain as model assumptions, operating constraints, and acceptance evidence.
+
 ## A cross-disciplinary research and application map
 
 This map is intentionally selective. A subfield is included only when at least one standard problem can name all five parts of an EG contract: **(1)** a fine object and a genuine elimination, reduction, or local oracle; **(2)** one shared representation, model, mechanism, controller, protocol, or resource limit; **(3)** a native scientific or operational objective; **(4)** a minimal collision or witness showing that a discarded distinction can change that objective; and **(5)** field-specific validity checks and evidence. The mere presence of latent variables, compression, coarse-graining, or a low-dimensional model is not enough.
 
 - A **direct EG anchor** means that the monograph or 33-paper collection already contains an explicit EG formulation, theorem, calibration, or worked example for part of the subfield.
 - A **partly anchored transfer** combines a direct EG interface with domain work that has not yet been developed as a complete EG result.
-- A **supported transfer direction** passes the five-part fit test in the field's primary literature, but remains a research proposal rather than an established EG theorem.
+- A **supported transfer direction** passes the five-part fit test in the field's primary literature, but remains a research or application direction rather than an established EG theorem or validated engineering result.
 
 The labels apply only to the mechanisms named below, not to every problem in the surrounding discipline.
 
@@ -261,7 +265,7 @@ For these mixed fields, the two engineering skills share a lightweight cross-bou
 - **Clinical, physiological, and epidemiological model deployment — supported transfer direction:** patient, physiological, or contact-network detail is reduced into risk scores, latent states, compartments, or shared policies and judged by calibrated clinical or public-health decisions across populations and institutions. Cross-site shift and subgroup collisions are valid witnesses; EG is not a medical-validity or regulatory claim.
 - **Earth, climate, and environmental modeling — supported transfer direction:** clouds, turbulence, topography, porous heterogeneity, ecosystem state, or forcing history is reduced into parameterizations, coarse grids, assimilation states, or sensor networks and judged by fluxes, extremes, hazards, forecasts, or interventions. Scale, conservation, and out-of-region validation are mandatory.
 
-EG does not replace the established theories in any retained field. Its role is narrower: type the elimination, shared deployment restriction, native loss, transmission path, evidence, and repair. Broad fields for which that contract cannot yet be stated are deliberately left off the map.
+EG does not replace established theories, engineering methods, standards, or validation practices in any retained field. Its role is narrower: type the elimination, shared deployment restriction, native loss, impact path, evidence, and repair. Broad fields for which that contract cannot yet be stated are deliberately left off the map.
 
 ### When does a new application genuinely become EG?
 
@@ -337,4 +341,4 @@ See the `LICENSE.md` and `CITATION.cff` files inside each skill for the controll
 
 ## Scope
 
-These tools support research navigation, mathematical development, and critical auditing. They do not turn analogy into theorem, numerical failure into impossibility, population obstruction into finite-sample detection, or citation into commercial permission. Exact claims should always be checked against their stated assumptions, proofs, evidence contracts, and historical sources.
+These tools support research navigation, mathematical development, engineering analysis, software implementation, and critical auditing. They do not turn analogy into theorem, numerical failure into impossibility, or population obstruction into finite-sample detection; nor do they turn one passing software test into physical validity, reliability, safe deployment, or a citation into commercial permission. Research and engineering claims should be checked against their assumptions, proofs, model and interface contracts, test evidence, acceptance scope, and historical sources.
